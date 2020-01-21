@@ -22,6 +22,9 @@ public class QueryProcessor {
                     case "plus":
                         String num3 = split2[4];
                         return String.valueOf(Integer.parseInt(num1) + Integer.parseInt(num3));
+                    case "minus":
+                        String num4 = split2[4];
+                        return String.valueOf(Integer.parseInt(num1) - Integer.parseInt(num4));
                 }
 
             }
