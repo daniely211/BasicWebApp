@@ -17,7 +17,7 @@ public class QueryProcessor {
                     if (splitString.length > 2) {
                         String numbers = splitString[2];
                         String[] numStrings = numbers.split(",");
-                        int max = 0
+                        int max = 0;
                         for(int i = 0; i < numStrings.length; i++) {
                             max = Math.max(max, Integer.parseInt(numStrings[i]));
                         }
