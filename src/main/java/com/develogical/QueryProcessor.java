@@ -1,6 +1,22 @@
 package com.develogical;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
 public class QueryProcessor {
+
+    public int fib(int num) {
+        List iArray = new ArrayList<Integer>();
+        iArray.add(1);
+        iArray.add(1);
+        for (int i = 1; i < num; i++) {
+            int first = (int) iArray.get(i);
+            int sec = (int) iArray.get(i-1);
+            iArray.add(first + sec);
+        }
+        return (int) iArray.get(num);
+    }
 
     public String process(String query) {
         if (query.toLowerCase().contains("shakespeare")) {
@@ -11,6 +27,15 @@ public class QueryProcessor {
         String[] splitString = query.split(": ");
         if (splitString.length > 1) {
             String first = splitString[1];
+
+            if (first.contains("Fibonacci")) {
+//                what%20is%20the%2014th%20number%20in%20the%20Fibonacci%20sequence
+                String[] splitFib = first.split(" ");
+                String numth = splitFib[3];
+                String num = numth.substring(0, numth.length()-2);
+                return String.valueOf(fib(Integer.parseInt(num)));
+            }
+
             if (first.startsWith("what is")) {
                 String[] split2 = first.split(" ");
                 String num1 = split2[2];
@@ -65,6 +90,8 @@ public class QueryProcessor {
                 default:
                     return "Team Golf";
             }
+
+//            what%20is%20the%2014th%20number%20in%20the%20Fibonacci%20sequence
 //            which%20year%20was%20Theresa%20May%20first%20elected%20as%20the%20Prime%20Minister%20of%20Great%20Britain
 //            %20which%20of%20the%20following%20numbers%20are%20primes:%20692,%20449
 //            %20who%20played%20James%20Bond%20in%20the%20film%20Dr%20No
