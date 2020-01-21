@@ -5,7 +5,7 @@ script: mvn clean verify
 deploy:
   provider: heroku
   api_key:
-    21aa6229-7926-4a46-9d92-0f9d6f79ae7d
+    secure: A1ARCz1aOFP5Gm7hWjQ3xjXXzJj64tM535m5f1pwrUsTFTjxp3RtcltaGetjSqxiQj3M/z3/VblHT8mpY+p/xUOkhcoJmAyia+d9rMGxrA0Vr3Ezj35mTFlFrtLoIiAHY4Y/ULHdBd9++N7NMXdLQM9KotYKA7sm+Un6dgWvRC/GH345r8y+gS7FYngG8rGkLE2TlNlFUIEaeEgpoVl3IeQCA6Cneny69xnIXKRe9ARzGfNUdJz87f5AxOTgGzO75wOs0Bh/QA7qdifz1NrBmT3uFBtB412RVSuqtriPlniOzzEucSAdsaWsw+l0Y/DPRcIAlj7UEIBZiFvVhDwscXcpe4bE+8Ie71Q07ryix+h/PucgNK7ZBAI3+0ugWTnKszUHBq4wFuExO8/KOVn0PWh6CTPJnV2pdQDm4kbLlfiwtCgMprEdBFVS64Fkuj5buYpgbK+m61nv9lzyrp5Gnc1aXLZQuD6pWlY7j4/cNEbUIvjGProarXRarzAbNicn5gf3sK6e+drmcUQBetwkHch/1AIdMr34h4P/gCTx0LzmhWaJeei4SZF1eG6rjkQC+/tAxYg+vnOC373x6wukWXNAzH9qolTh7yzp/OFY9KuQXmtpW+a3UnPEg2ctMS2oT4/IzeCzbV5XLHdFgbdGAnU7V2o5gs3FPVGtbU+jhb8=
   app: horse-battery-69
   on:
     repo: daniely211/BasicWebApp
