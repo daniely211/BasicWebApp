@@ -15,7 +15,7 @@ public class QueryProcessor {
             int sec = (int) iArray.get(i-1);
             iArray.add(first + sec);
         }
-        return (int) iArray.get(num);
+        return (int) iArray.get(num-1);
     }
 
     public String process(String query) {
